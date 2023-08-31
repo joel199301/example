@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>onePage</title>
+  <script src="https://kit.fontawesome.com/7b4c09cd67.js" crossorigin="anonymous"></script>
+  <!--CSS외부정의-->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="logo">
+          <a href="../index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <ul class="gnb">
+          <li><a href="../index.html"></a>HOME</li>
+          <li><a href="#about"></a>ABOUT</li>
+          <li><a href="#work"></a>WORK</li>
+          <li><a href="#process"></a>PROCESS</li>
+          <li><a href="#services"></a>SERVICES</li>
+          <li><a href="#test"></a>TESTMONIALS</li>
+          <li><a href="#contact"></a>CONTACT</li>
+        </ul>
+      </nav>
+      <div class="title">
+        <h1>We Design and Devlop</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> Asperiores ex, quos odit, laudantium aliquam
+          consectetur<br> voluptatibus ipsa voluptatem ea minima, totam explicabo pariatur!
+        </p>
+        <button class="btn" type="button">CONTACT US</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- about -->
+  <section id="about">
+    <h1>About Us</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+      Recusandae provident ea pariatur ad vitae,<br>
+      sunt itaque placeat ab harum cumque labore error ullam iure deserunt?
+    </p>
+    <img src="img/sign.png" alt="">
+  </section>
+
+  <!-- skill -->
+  <section id="skill">
+    <div class="wrap">
+      <div class="txt">
+        <h1>Professional Skills</h1>
+        <div class="progress">
+          <h2>UI/UX DESIGN <b>75%</b></h2>
+          <div class="bar bar1"></div>
+        </div>
+        <div class="progress">
+          <h2>WEB DEVELOPMENT <b>90%</b></h2>
+          <div class="bar bar2"></div>
+        </div>
+        <div class="progress">
+          <h2>MARKETING <b>65%</b></h2>
+          <div class="bar bar3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- #numbers -->
+  <section id="numbers">
+    <div class="wrap">
+      <div class="box">
+        <img src="img/bag.png" alt="">
+        <p>
+          <b>548</b><br>
+          projects completed
+        </p>
+      </div>
+      <div class="box">
+        <img src="img/clock.png" alt="">
+        <p>
+          <b>1465</b><br>
+          working hours
+        </p>
+      </div>
+      <div class="box">
+        <img src="img/star_w.png" alt="">
+        <p>
+          <b>612</b><br>
+          positive feedbacks
+        </p>
+      </div>
+      <div class="box">
+        <img src="img/heart.png" alt="">
+        <p>
+          <b>745</b><br>
+          happy clients
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- #work -->
+  <section id="work">
+    <div class="wrap">
+      <div class="box">
+        <img src="img/work01.jpg" alt="">
+        <div class="overlay"></div>
+      </div>
+      <div class="box">
+        <img src="img/work02.jpg" alt="">
+        <div class="overlay"></div>
+      </div>
+      <div class="box">
+        <img src="img/work03.jpg" alt="">
+        <div class="overlay"></div>
+      </div>
+      <div class="box">
+        <img src="img/work04.jpg" alt="">
+        <div class="overlay"></div>
+      </div>
+      <div class="box">
+        <img src="img/work05.jpg" alt="">
+        <div class="overlay"></div>
+      </div>
+      <div class="box">
+        <img src="img/work06.jpg" alt="">
+        <div class="overlay"></div>
+      </div>
+      <div class="box">
+        <img src="img/work07.jpg" alt="">
+        <div class="overlay"></div>
+      </div>
+      <div class="box">
+        <img src="img/work08.jpg" alt="">
+        <div class="overlay"></div>
+      </div>
+    </div>
+    <div class="load-more">
+      <button type="button">LOAD MORE WORK</button>
+    </div>
+  </section>
+
+  <!-- #process -->
+  <section id="process">
+    <h1>Our Work Process</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+      Expedita repudiandae debitis fugiat maiores aperiam est.
+    </p>
+    <!-- figure : 미디어 파일을 묶어줄때 사용 -->
+    <figure class="vid">
+      <video src="img/sample.mp4" poster="img/sample.jpg" width="1100" height="520">
+        <p>Work Process</p> <!--엑박일때 나오는글-->
+      </video>
+      <div class="btnGroup">
+        <button class="play" onclick="vidPlay()" type="button"><img src="img/play.png" alt=""></button>
+        <button class="stop" onclick="vidStop()" type="button"><img src="img/stop.png" alt=""></button>
+      </div>
+    </figure>
+  </section>
+  <!-- 내부정의 js -->
+  <script>
+    const vid = document.querySelector(".vid > video");
+    const playBtn = document.querySelector(".play");
+    const stopBtn = document.querySelector(".stop");
+    // vidPlay 함수생성
+    function vidPlay() {
+      vid.play()
+      playBtn.style.display = "none"
+      stopBtn.style.display = "block"
+    }
+
+    function vidStop() {
+      vid.pause()
+      playBtn.style.display = "block"
+      stopBtn.style.display = "none"
+    }
+  </script>
+
+  <!-- #services -->
+  <section id="services">
+    <div class="wrap">
+      <div class="box">
+        <img src="img/dia.png" alt="">
+        <h3>UI / UX DESIGN</h3>
+        <p>Be set fourth land god darkness<br>
+          make it wherein own
+        </p>
+      </div>
+      <div class="box">
+        <img src="img/bow.png" alt="">
+        <h3>WEB DEVELOPMENT</h3>
+        <p>Be set fourth land god darkness<br>
+          make it wherein own
+        </p>
+      </div>
+      <div class="box">
+        <img src="img/mobile.png" alt="">
+        <h3>APP / MOBILE</h3>
+        <p>Be set fourth land god darkness<br>
+          make it wherein own
+        </p>
+      </div>
+      <div class="box">
+        <img src="img/joy.png" alt="">
+        <h3>GAME DISIGN</h3>
+        <p>Be set fourth land god darkness<br>
+          make it wherein own
+        </p>
+      </div>
+      <div class="box">
+        <img src="img/airplane.png" alt="">
+        <h3>SEO / MARKETING</h3>
+        <p>Be set fourth land god darkness<br>
+          make it wherein own
+        </p>
+      </div>
+      <div class="box">
+        <img src="img/star_g.png" alt="">
+        <h3>PHOTOGRAPHY</h3>
+        <p>Be set fourth land god darkness<br>
+          make it wherein own
+        </p>
+      </div>
+      <div class="box">
+        <img src="img/magic.png" alt="">
+        <h3>GRAPHIC DESIGN</h3>
+        <p>Be set fourth land god darkness<br>
+          make it wherein own
+        </p>
+      </div>
+      <div class="box">
+        <img src="img/water.png" alt="">
+        <h3>ILLUSTRATIONS</h3>
+        <p>Be set fourth land god darkness<br>
+          make it wherein own
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- #test -->
+  <section id="test">
+    <h3>"Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+      Dolores explicabo, molestiae quis vitae illum incidunt<br>
+      expedita quod at culpa temporibus dolorum."
+    </h3>
+    <p>MICHAEL HOPKINS</p>
+    <ul class="dot">
+      <li></li>
+      <li class="on"></li>
+      <li></li>
+    </ul>
+  </section>
+
+  <!-- #client -->
+  <section id="client">
+    <div class="wrap">
+      <a href=""><img src="img/client01.png" alt=""></a>
+      <a href=""><img src="img/client02.png" alt=""></a>
+      <a href=""><img src="img/client03.png" alt=""></a>
+      <a href=""><img src="img/client04.png" alt=""></a>
+      <a href=""><img src="img/client05.png" alt=""></a>
+    </div>
+  </section>
+
+  <!-- #project -->
+  <section id="project">
+    <div class="wrap">
+      <h1>Need a Project?</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Laboriosam perferendis animi placeat incidunt.
+      </p>
+      <form>
+        <input type="text" placeholder="Your Name">
+        <input type="text" placeholder="Your Email">
+        <input type="text" placeholder="Your Title">
+        <textarea placeholder="Your Comment"></textarea>
+        <input type="submit" value="SEND MESSAGE">
+      </form>
+    </div>
+  </section>
+
+  <!-- #footer -->
+  <footer>
+    <div class="wrap">
+      <div class="author">
+        <h2>Piroll Design, Inc</h2>
+        <p>&copy; 2023 Piroll All rights reserved</p>
+        <p>Design by Lee</p>
+      </div>
+      <div class="email">
+        <p>nim2195@naver.com</p>
+        <p>+44 9757 6537</p>
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="#">Projexts</a></li>
+          <li><a href="#">Abouts</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Carreer</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Legals</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Dribble</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
